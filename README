@@ -1,0 +1,7 @@
+
+==== CYGWIN USERS !!!!
+Use the following configure command with any other desired options for configuring
+since optimization in Cygwin may cause segfaults during semaphore initialization.
+
+./configure "CXXFLAGS=-O0"
+

@@ -1,0 +1,42 @@
+Version 1.0:
+* Initial Release
+
+Version 1.1:
+* Fixed issue where program may not exit properly if still in the middle of an operation
+
+Version 1.2:
+* Increased performance by looking at gprof output and learning to manage the count of the trash can contents for a performance boost
+* Changed the menu inputs to show only valid options
+* Troubleshot issues with program not working under Cygwin and added readme instructions for Cygwin users (need to disable optimization)
+* Added in ncurses screen help page
+* Added the Makefile target 'eclipse' to create a usable eclipse project
+
+Version 1.3:
+* Fixed issue that arose before initial release where an unmounted trash can caused errors
+* Added user defined color support
+* Split FullScreen.* into multiple files
+* Fixed some improper syntax on assignment operators
+* dropped support for not having threading library, though this was never tested to work in the first place
+
+Version 1.4:
+* added report argument to after function pointer call of trailer.cpp to fix a segmentation fault
+
+Version 1.5:
+* made adding a file to a trash can return a trash key
+* made the application distributed
+* trapped user error exceptions in tt (had DEBUG flag backwards)
+
+Version 1.6:
+* worked around what looks like a GCC compiler bug where garbage was being indexed when valid data was being indexed to
+* some TCP related bug fixes
+
+Version 1.7:
+* removed exploritory code that found the compiler bug
+
+Version 1.8:
+* removed some redudant code
+
+Version 1.9:
+* added schedule notifications to distributed peers
+* fixed issue where messages where getting lost on the way out
+
